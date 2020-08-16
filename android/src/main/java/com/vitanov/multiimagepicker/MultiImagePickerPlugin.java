@@ -542,6 +542,8 @@ public class MultiImagePickerPlugin implements
                 .setRequestCode(REQUEST_CODE_CHOOSE)
                 .setSelectedImages(selectedUris)
                 .exceptGif(true)
+                .setAlbumSpanCount(1, 2)
+                .setButtonInAlbumActivity(true)
                 .setIsUseDetailView(useDetailsView.equals("true"))
                 .setReachLimitAutomaticClose(autoCloseOnSelectionLimit.equals("true"))
                 .isStartInAllView(startInAllView.equals("true"));
